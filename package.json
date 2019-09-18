@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "personal Vue.js project",
   "author": "NJ90 <48573943+NJ90@users.noreply.github.com>",
-  "private": true,
+  // "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
