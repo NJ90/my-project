@@ -1,6 +1,6 @@
 # my-project
 
-> personal Vue.js project
+> https://nj90.github.io/my-project/
 
 ## Build Setup
 
