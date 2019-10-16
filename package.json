@@ -1,15 +1,15 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "description": "personal Vue.js project",
-  "author": "NJ90 <48573943+NJ90@users.noreply.github.com>",
-  // "private": true,
+  "description": "A Vue.js project",
+  "author": "nameejang <55773845+nameejang@users.noreply.github.com>",
+  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/e2e/specs",
+    "test": "npm run unit && npm run e2e",
+    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
   "dependencies": {
