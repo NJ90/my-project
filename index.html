@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>my-project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <script src="https://kit.fontawesome.com/361c9a67f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="portfolio" >
+        <section id="profile" class="container">
+            <div class="heading">
+              <h1 class="name">{{ name }}</h1>
+              <ul class="link">
+                <li><a v-bind:href="github" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+                <li><a v-bind:href="github" target="_blank"><i class="fab fa-medium fa-2x"></i></a></li>    
+              </ul>
+            </div>
+            <p class="skills">{{ skills }}</p>
+        </section>
+
+        <section class="container">
+          <ul id="tab">
+           <li><a href="" v-bind:click="tab"  class="publishing">Web/App Publishing</a></li>
+           <li><a href="" v-bind:click="tab"  class="toyproject">Front-End Toy Project</a></li>
+          </ul>
+        </section>
+
+        <section id="project" class="container">
+          <section class="pub">
+            <div class="inner">
+              <h1>Web/App Publishing</h1>
+            </div>
+          </section>
+
+          <section class="toy">
+            <div class="inner">
+              <h1>Front-End Toy Project</h1>
+            </div>
+          </section>
+        </section>
+
+        <section id="footer" class="container">
+          <div class="information">
+            <p class="about">about</p>
+            <p><a href=""><i class="fas fa-arrow-alt-circle-up"></i>top</a></p>
+            <ul class="link">
+              <li><a v-bind:href="github" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+              <li><a v-bind:href="github" target="_blank"><i class="fab fa-medium fa-2x"></i></a></li>    
+            </ul>
+          </div>
+      </section>
+
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
   </body>
 </html>

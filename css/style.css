@@ -1,0 +1,16 @@
+#profile{margin-bottom: 60px;}
+#profile .heading{display: block; overflow: hidden; padding: 60px 0 30px;border-bottom: 6px solid #000;}
+#profile .name{display: inline-block; font-size: 48px;}
+#profile .link{float: right;}
+#profile .link li{display: inline-block; width: 30px; height: 30px; margin-right: 10px;}
+#profile .skills{margin: 30px 0 33px;}
+
+
+#project{} 
+#project .container{border: 2px solid #000;} 
+
+
+#footer{border-top: 6px solid #000;padding: 30px 0 60px;}
+#footer .link{float: left;}
+#footer .link li{display: inline-block; width: 30px; height: 30px; margin-right: 10px;}
+.about{color: #555;}
